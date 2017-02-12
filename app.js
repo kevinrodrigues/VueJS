@@ -15,17 +15,15 @@ new Vue({
 
 	methods: {
 		getEvents: function(eventType) {
-			eventType = [
-				{
-					id: 1,
-					name: 'Event',
-					description: 'Event description',
-					date: '2017-09-11'
-				}
-			];
+			eventType = [{
+				id: 1,
+				name: 'Event',
+				description: 'Event description',
+				date: '2017-09-11'
+			}];
 
-			this.$set('events', events);
-		},
+			this.$set('eventType', events);
+	},
 
 		addEvent: function() {
 			// console.log(this.event.description);
